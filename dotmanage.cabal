@@ -1,0 +1,27 @@
+name:                dotmanage
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/dotmanage#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Satchel Baldwin
+maintainer:          satchelbaldwinschool@gmail.com
+copyright:           2017 Satchel Baldwin
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable dotmanage
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  other-modules:       Manager
+  build-depends:       base >= 4.7 && < 5
+                     , cmdargs
+                     , directory
+                     , bytestring
+                     , aeson
+                     , MissingH
+                     , cond
